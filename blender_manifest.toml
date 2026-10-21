@@ -5,8 +5,10 @@ version = "0.3.1"
 name = "J3D BMD Import/Export (Twilight Princess)"
 tagline = "Import/export J3D .bmd models, .bck animations and .kcl collision"
 # TODO: replace with your name and an address you are happy to publish
-maintainer = "YOUR NAME <your.email@example.com>"
+maintainer = "Dio93"
 type = "add-on"
+
+website = "https://github.com/Dio93/j3d_bmd_io"
 
 tags = ["Import-Export"]
 
