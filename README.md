@@ -22,7 +22,9 @@ Dusklight / Twilit Realm project. No game assets are included.
 
 ## Installation (Blender 4.2 - 5.x)
 Download this code as ZIP.
+
 In Blender:
+
 Edit -> Preferences -> Get Extensions -> drop-down (top right) -> *Install from Disk...* and pick
 the ZIP. The operators appear under File -> Import / Export:
 *J3D Model (.bmd)* and *J3D Animation (.bck)*. Files can also be dragged into the viewport.
