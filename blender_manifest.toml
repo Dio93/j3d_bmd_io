@@ -1,0 +1,20 @@
+schema_version = "1.0.0"
+
+id = "j3d_bmd_io"
+version = "0.3.1"
+name = "J3D BMD Import/Export (Twilight Princess)"
+tagline = "Import/export J3D .bmd models, .bck animations and .kcl collision"
+# TODO: replace with your name and an address you are happy to publish
+maintainer = "YOUR NAME <your.email@example.com>"
+type = "add-on"
+
+tags = ["Import-Export"]
+
+blender_version_min = "4.2.0"
+
+license = [
+  "SPDX:GPL-3.0-or-later",
+]
+
+[permissions]
+files = "Import and export .bmd, .bck and .kcl files"
