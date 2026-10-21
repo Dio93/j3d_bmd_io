@@ -7,6 +7,19 @@ skinning, Maya matrix mode) and `uri_wait_a.bck`. Both models survive parse -> w
 identical geometry, skin weights, normals, UVs and materials; unchanged textures are written back
 byte-for-byte.
 
+## AI disclosure and disclaimer
+The source code of this add-on was written with the help of an AI model (Claude by Anthropic), working
+from the requirements, test files and feedback of the human maintainer. The maintainer directed the
+project and tested the results in-game, but the code has not been independently audited.
+
+The add-on is provided "as is", without warranty of any kind (see the GPL-3.0-or-later license).
+It reads and writes file formats that were analysed from publicly available information and the
+open-source Dusklight code. Always keep backups of your original game files; exported files can
+still crash the game or behave unexpectedly, especially collision (`.kcl`) edits.
+
+This is an unofficial fan tool. It is not affiliated with or endorsed by Nintendo, Anthropic, or the
+Dusklight / Twilit Realm project. No game assets are included.
+
 ## Installation (Blender 4.2 - 5.x)
 Edit -> Preferences -> Get Extensions -> drop-down (top right) -> *Install from Disk...* and pick
 the ZIP. The operators appear under File -> Import / Export:
