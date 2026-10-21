@@ -9,7 +9,7 @@ byte-for-byte.
 
 ## AI disclosure and disclaimer
 The source code of this add-on was written with the help of an AI model (Claude by Anthropic), working
-from the requirements, test files and feedback of the human maintainer. The maintainer directed the
+from the requirements, test files and feedback of me. The maintainer directed the
 project and tested the results in-game, but the code has not been independently audited.
 
 The add-on is provided "as is", without warranty of any kind (see the GPL-3.0-or-later license).
