@@ -115,6 +115,16 @@ def decode_palette(pal_fmt, buf, count):
 # decoding
 # --------------------------------------------------------------------------
 
+def _pad_palette(palette, fmt):
+    """Some files index past the end of their palette (the GPU then reads unrelated TLUT memory).
+    Pad with transparent black so decoding never fails."""
+    need = {C4: 16, C8: 256}.get(fmt)
+    if palette is None or need is None or len(palette) >= need:
+        return palette
+    pad = np.zeros((need - len(palette), 4), np.uint8)
+    return np.concatenate([palette, pad])
+
+
 def decode(fmt, buf, w, h, palette=None):
     """Decode one mip level to an (h, w, 4) uint8 RGBA array."""
     if fmt not in BLOCK:
@@ -123,6 +133,7 @@ def decode(fmt, buf, w, h, palette=None):
     bx, by = -(-w // bw), -(-h // bh)
     size = level_size(fmt, w, h)
     raw = np.frombuffer(buf, np.uint8, count=size)
+    palette = _pad_palette(palette, fmt)
 
     if fmt == I4 or fmt == C4:
         b = raw.reshape(by, bx, bh, bw // 2)
